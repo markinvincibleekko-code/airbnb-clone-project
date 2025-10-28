@@ -185,5 +185,46 @@ A user can write multiple reviews, and a property can have multiple reviews.
 ---
 
 This design ensures efficient data retrieval and supports all core Airbnb features — user management, listings, bookings, payments, and reviews.
+## 🧩 Feature Breakdown
+
+The AirBnB Clone project includes several core features that replicate the essential functionality of the real Airbnb platform.  
+Each feature is designed to work seamlessly with the backend architecture to deliver a smooth user experience.
+
+### 👤 User Management
+This feature handles user registration, authentication, and profile management.  
+It ensures users can securely sign up, log in, update their details, and manage their profiles. Authentication tokens and permissions control access to the system.
+
+### 🏠 Property Management
+Hosts can create, update, and delete property listings through this feature.  
+Each property includes details such as title, description, location, price per night, and available amenities.  
+It enables users to search and browse properties based on filters like price, location, and availability.
+
+### 📅 Booking System
+The booking system allows users to reserve properties for specific dates.  
+It manages availability, prevents overlapping reservations, and stores booking information such as start and end dates.  
+Users can view their current and past bookings directly from their profiles.
+
+### 💳 Payment Processing
+This feature handles all financial transactions between guests and hosts.  
+It ensures secure processing of payments, records each transaction, and updates booking and payment statuses automatically.  
+Integration with third-party payment gateways enables smooth and safe transfers.
+
+### ⭐ Review and Rating System
+Users can provide feedback and ratings for properties they have stayed in.  
+This promotes trust and transparency within the platform by allowing guests to share their experiences.  
+Hosts can also view and respond to reviews, helping maintain quality and reputation.
+
+### 🔍 Search and Filtering
+Users can easily find properties using filters such as location, price, and availability.  
+This improves the overall usability and performance of the system by ensuring efficient data retrieval and a better user experience.
+
+### ⚙️ Admin Dashboard (Optional Feature)
+Administrators can monitor system activity, manage users, and review property listings.  
+This feature helps ensure data integrity, user safety, and proper platform governance.
+
+---
+
+These features collectively make the AirBnB Clone a complete and scalable solution for property rentals, focusing on security, performance, and usability.
+
 
 
