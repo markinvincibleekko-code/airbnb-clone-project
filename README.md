@@ -225,6 +225,32 @@ This feature helps ensure data integrity, user safety, and proper platform gover
 ---
 
 These features collectively make the AirBnB Clone a complete and scalable solution for property rentals, focusing on security, performance, and usability.
+## 🔐 API Security
+
+Security is a core component of the AirBnB Clone backend.  
+Because the system handles sensitive information such as user credentials, personal details, and payment data, multiple security measures are implemented to protect users and the platform.
+
+### 🪪 Authentication
+Authentication ensures that only verified users can access the system.  
+It uses secure login methods (e.g., JWT or token-based authentication) to confirm a user’s identity before granting access.  
+This prevents unauthorized users from viewing or modifying protected data.
+
+### 🔏 Authorization
+Authorization controls what authenticated users are allowed to do.  
+For example, a host can manage their own property listings, while a guest can only make bookings.  
+This separation of permissions protects data integrity and prevents privilege abuse.
+
+### 📊 Rate Limiting
+Rate limiting prevents excessive requests from a single source, which could lead to denial-of-service (DoS) attacks.  
+By limiting the number of API calls per user or IP address, the system maintains stability and prevents misuse of server resources.
+
+### 🔐 Data Encryption
+All sensitive data — such as passwords, tokens, and payment information — is encrypted in transit and at rest.  
+HTTPS (SSL/TLS) is used for secure communication between the client and server, ensuring that data cannot be intercepted or tampered with.
+
+### 🧱 Input Validation and Sanitization
+User i
+
 
 
 
