@@ -247,6 +247,46 @@ By limiting the number of API calls per user or IP address, the system maintains
 ### 🔐 Data Encryption
 All sensitive data — such as passwords, tokens, and payment information — is encrypted in transit and at rest.  
 HTTPS (SSL/TLS) is used for secure communication between the client and server, ensuring that data cannot be intercepted or tampered with.
+## CI/CD Pipeline
+
+### What is CI/CD?
+
+CI/CD stands for Continuous Integration and Continuous Deployment/Delivery. It's an automated approach to software development that enables teams to deliver code changes more frequently and reliably.
+
+**Continuous Integration (CI)** involves automatically building and testing code changes whenever developers commit to the repository. This helps catch bugs early and ensures that new code integrates smoothly with the existing codebase.
+
+**Continuous Deployment/Delivery (CD)** automates the release process, allowing tested code to be deployed to production environments quickly and safely.
+
+### Why CI/CD is Important for This Project
+
+- **Code Quality**: Automated testing ensures that bugs are caught before they reach production
+- **Faster Development**: Automated builds and deployments reduce manual work and speed up delivery
+- **Consistency**: Standardized processes ensure every deployment follows the same steps
+- **Early Bug Detection**: Issues are identified immediately when code is committed
+- **Reduced Risk**: Smaller, frequent updates are easier to troubleshoot than large releases
+- **Team Collaboration**: Everyone works with the latest, tested version of the code
+
+### Tools for CI/CD Implementation
+
+#### GitHub Actions
+- Native integration with GitHub repositories
+- Workflow automation for testing, building, and deployment
+- Free tier available for public repositories
+- YAML-based configuration for defining pipelines
+
+#### Docker
+- Containerization ensures consistency across development, testing, and production
+- Simplifies deployment and scaling
+- Enables microservices architecture
+- Facilitates environment replication
+
+#### Additional Tools to Consider
+- **Jest/Pytest**: Automated testing frameworks
+- **ESLint/Prettier**: Code quality and formatting checks
+- **SonarQube**: Code quality and security analysis
+- **Jenkins**: Alternative CI/CD automation server
+- **AWS CodePipeline/Azure DevOps**: Cloud-native CI/CD solutions
+- **Vercel/Netlify**: Automated deployment for frontend applications
 
 ### 🧱 Input Validation and Sanitization
 User i
