@@ -99,4 +99,91 @@ They ensure new code is integrated smoothly and deployed reliably.
 ---
 
 These technologies work together to create a stable, high-performance backend system that can scale efficiently while supporting complex user interactions.
+## 🗄️ Database Design
+
+The AirBnB Clone project database is designed to efficiently handle relationships between users, properties, bookings, reviews, and payments.  
+It ensures data consistency, scalability, and smooth interaction between entities.
+
+### 🧍 Users
+**Purpose:** Store information about guests and hosts.  
+**Key Fields:**
+- `id`: Unique identifier for each user  
+- `name`: Full name of the user  
+- `email`: User’s email address (unique)  
+- `password`: Hashed password for authentication  
+- `role`: Defines if the user is a guest or a host  
+
+**Relationships:**  
+A user can list multiple properties and make multiple bookings.
+
+---
+
+### 🏠 Properties
+**Purpose:** Represent the properties listed by hosts.  
+**Key Fields:**
+- `id`: Unique property identifier  
+- `title`: Name or title of the property  
+- `description`: Detailed information about the property  
+- `price_per_night`: Cost per night  
+- `host_id`: References the user who owns the property  
+
+**Relationships:**  
+A property belongs to a host (user) and can have many bookings and reviews.
+
+---
+
+### 📅 Bookings
+**Purpose:** Store reservation details for properties.  
+**Key Fields:**
+- `id`: Unique booking identifier  
+- `user_id`: References the user who made the booking  
+- `property_id`: References the booked property  
+- `start_date`: Booking start date  
+- `end_date`: Booking end date  
+
+**Relationships:**  
+A booking is made by one user for one property, but each property can have multiple bookings.
+
+---
+
+### 💳 Payments
+**Purpose:** Manage payment details related to bookings.  
+**Key Fields:**
+- `id`: Unique payment identifier  
+- `booking_id`: References the booking for which payment was made  
+- `amount`: Total amount paid  
+- `status`: Payment status (e.g., completed, pending, failed)  
+- `payment_date`: Date of payment  
+
+**Relationships:**  
+Each payment is linked to a single booking.
+
+---
+
+### ⭐ Reviews
+**Purpose:** Store feedback from users about properties.  
+**Key Fields:**
+- `id`: Unique review identifier  
+- `user_id`: References the user who wrote the review  
+- `property_id`: References the reviewed property  
+- `rating`: Numerical rating (e.g., 1–5)  
+- `comment`: Text review or feedback  
+
+**Relationships:**  
+A user can write multiple reviews, and a property can have multiple reviews.
+
+---
+
+### 🔗 Entity Relationships Summary
+- **User ↔ Property:** One-to-Many (A user can have multiple properties)  
+- **User ↔ Booking:** One-to-Many (A user can make multiple bookings)  
+- **Property ↔ Booking:** One-to-Many (A property can be booked multiple times)  
+- **Booking ↔ Payment:** One-to-One (Each booking has one payment)  
+- **Property ↔ Review:** One-to-Many (A property can have many reviews)  
+- **User ↔ Review:** One-to-Many (A user can post multiple reviews)
+
+---
+
+This design ensures efficient data retrieval and supports all core Airbnb features — user management, listings, bookings, payments, and reviews.
+
 
