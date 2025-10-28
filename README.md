@@ -63,3 +63,40 @@ They manage timelines, assign tasks, track progress, and facilitate communicatio
 ---
 
 Each of these roles contributes to the overall success of the AirBnB Clone project by ensuring that the system is stable, scalable, and user-friendly.
+## ⚙️ Technology Stack
+
+The AirBnB Clone project uses a combination of powerful and modern technologies to ensure scalability, performance, and maintainability.
+
+### 🐍 Django
+A high-level Python web framework used to build the backend and RESTful APIs.  
+It handles routing, authentication, data modeling, and server-side logic.
+
+### 🌐 Django REST Framework (DRF)
+An extension of Django that simplifies building RESTful APIs with serialization, authentication, and permissions support.
+
+### 🐘 PostgreSQL
+A robust, open-source relational database system used to store and manage data efficiently.  
+It supports complex queries, relationships, and data integrity.
+
+### ⚡ GraphQL
+A query language for APIs that allows clients to request only the data they need.  
+It provides flexibility and reduces the amount of data transferred between frontend and backend.
+
+### 🐳 Docker
+Used for containerization to create consistent development and production environments.  
+It simplifies deployment and dependency management.
+
+### 🚀 Celery
+A task queue system that handles background tasks like sending notifications and processing payments asynchronously.
+
+### 🔴 Redis
+An in-memory data store used for caching, session management, and as a message broker for Celery tasks.
+
+### 🔁 CI/CD Pipelines
+Continuous Integration and Continuous Deployment pipelines automate testing and deployment processes.  
+They ensure new code is integrated smoothly and deployed reliably.
+
+---
+
+These technologies work together to create a stable, high-performance backend system that can scale efficiently while supporting complex user interactions.
+
